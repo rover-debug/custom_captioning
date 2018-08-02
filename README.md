@@ -19,12 +19,10 @@ Step 3: Create another folder with a single text file containing the annotations
 
 The format for the annotations text file is this:
 
-<filename>.json#0 <caption>
+"{filename}.json#0 {caption}"
 
 Here is an example caption:
 PIA11242.jpg.json#0 mudstone and dark sand dune field
------------------   ---------------------------------
-<filename>.json            <caption>
 
 This should be a single text file of all your captions that will be preprocessed by the 
 "preprocess_data.sh" script below
@@ -32,22 +30,26 @@ This should be a single text file of all your captions that will be preprocessed
 Step 4: Run "sudo chmod a+x *" to make all files executable
 
 Step 5: Run "sudo ./init.sh" which takes two arguments in the followng order: the path to your workspace directory 
-                and the path to the directory where you want you want the processed captions to go 
+and the path to the directory where you want you want the processed captions to go 
 
                 ex. ./init.sh /Users/bhavin/img2text /Users/bhavin/img2text/MARS_processed_captions
 
 
 Step 6: Run "sudo ./preprocess_data.sh" which takes 4 arguments in the following order: the path to your workspace directory, the path to your image folder, the path to your unprocessed caption file, and the processed captions dir specified in step 5
 
+                ```
                 ex. ./preprocess_data.sh /Users/bhavin/img2text /Users/bhavin/img2text/MARS_imgs 
                 /Users/bhavin/img2text/MARS_text/mars.token.txt /Users/bhavin/img2text/MARS_processed_captions 
+                ```
 
 You should have generated an index.json file in the directory you specified (ex. MARS_processed captions). It will also generate a word_counts.txt file in the TFRecords directory.
 
 Step 5: Run "sudo ./start_train.sh" which takes three arguments in the followng order: the path to your workspace directory, whether or not to train
                         the inception frontend, and the number of training steps
 
-                        ex. "sudo ./start_train.sh /Users/bhavin/img2text/ false 8360"
+                ```
+                ex. "sudo ./start_train.sh /Users/bhavin/img2text/ false 8360"
+                ```
 
 Step 6: Begin training! Your model file will be generated in the Model directory
 
