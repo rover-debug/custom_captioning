@@ -14,7 +14,9 @@ How to retrain with your data?
 =======================
 
 Step 1: Downlaod the repo and “cd” to the training_scripts folder via terminal
+
 Step 2: Create a folder and place all your images inside
+
 Step 3: Create another folder with a single text file containing the annotations.
 
 The format for the annotations text file is this:
