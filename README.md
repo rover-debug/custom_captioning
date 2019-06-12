@@ -66,11 +66,12 @@ Alternatively: You can also use Apache Tika to run this model on a web server wi
 
 Questions, comments?
 ===================
-Send them to [Chris A. Mattmann](mailto:chris.a.mattmann@jpl.nasa.gov) or [Thejan Wijesinghe](mailto:thejan.k.wijesinghe@gmail.com).
+Send them to [Chris A. Mattmann](mailto:chris.a.mattmann@jpl.nasa.gov) or [Thejan Wijesinghe](mailto:thejan.k.wijesinghe@gmail.com) or [Bhavin Shah](mailto:bhavints@usc.edu)
 
 Contributors
 ============
 * Chris A. Mattmann, JPL & USC
+* Bhavin Shah, JPL & USC
 * Thejan Wijesinghe, University of Moratuwa
 
 License
